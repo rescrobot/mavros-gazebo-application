@@ -118,15 +118,18 @@ MAVROS 런치 파일 또는 PX4 런치 파일에 파라미터 설정 부분을 �
 
 + connect joystick with PC via cable
 
-check connection
++ check connection
 
+~~~shell
 -> s /dev/input/js*
+~~~
++ /joy topic publish
 ~~~shell
     $ sudo apt-get install ros-noetic-joy
     $ rosrun joy joy_node
     $ rostopic echo /joy
 ~~~
-
++ joystick control
 ~~~shell
     $ git clone <this repository>
     $ python <clone directory>/scripts/mavors_joy_controller.py
