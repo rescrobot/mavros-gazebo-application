@@ -63,8 +63,9 @@ $ . ~/.bashrc
 
 #### Note: failsafe, manual control lost
 + Install and run `QGroundControl` while running PX4-SITL
-
-    https://docs.qgroundcontrol.com/master/en/qgc-user-guide/getting_started/download_and_install.html
+~~~shell
+    링크: https://docs.qgroundcontrol.com/master/en/qgc-user-guide/getting_started/download_and_install.html
+~~~
 
 + Vehicle parameter setup -> set `COM_RCL_EXCEPT` as 4 (only once)
     방법 1: MAVLink 콘솔을 통해 설정
@@ -79,16 +80,14 @@ param set COM_RCL_EXCEPT 4
 param show COM_RCL_EXCEPT
 ~~~
 
-    방법 2: launch 파일 수정
+방법 2: launch 파일 수정
 
 MAVROS 런치 파일 또는 PX4 런치 파일에 파라미터 설정 부분을 추가합니다:
 ~~~shell
 <rosparam param="COM_RCL_EXCEPT">4</rosparam>
 ~~~
 
-적용 후 재실행
-
-런치 파일을 다시 실행하여 파라미터가 적용되었는지 확인합니다.
+적용 후 재실행 -> 런치 파일을 다시 실행하여 파라미터가 적용되었는지 확인합니다.
 
 ### Setting faster simulator
 + Referred this [viedeo](https://youtu.be/1Bs98kOwuK4)
