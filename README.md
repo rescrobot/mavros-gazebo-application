@@ -115,6 +115,17 @@ MAVROS 런치 파일 또는 PX4 런치 파일에 파라미터 설정 부분을 �
 + To use the other model with sensors => edit "models" param in mavros_posix.sitl.launch file
 + use Joystick to manually control -> it supports **mode 1,2** and **Position/Rate control**
     + Velocity/Attitude control are not supported anymore due to their error.
+
++ connect joystick with PC via cable
+check connection
+
+-> s /dev/input/js*
+~~~shell
+    $ sudo apt-get install ros-noetic-joy
+    $ rosrun joy joy_node
+    $ rostopic echo /joy
+~~~
+
 ~~~shell
     $ git clone <this repository>
     $ python <clone directory>/scripts/mavors_joy_controller.py
