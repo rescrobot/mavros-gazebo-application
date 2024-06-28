@@ -68,6 +68,7 @@ $ . ~/.bashrc
 ~~~
 
 + Vehicle parameter setup -> set `COM_RCL_EXCEPT` as 4 (only once)
++ 
     방법 1: MAVLink 콘솔을 통해 설정
 PX4 시뮬레이터 터미널에서 pxh> 프롬프트가 나타나는 MAVLink 콘솔에 접근합니다.
 
