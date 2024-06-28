@@ -121,7 +121,7 @@ MAVROS 런치 파일 또는 PX4 런치 파일에 파라미터 설정 부분을 �
 + check connection
 
 ~~~shell
--> s /dev/input/js*
+ls /dev/input/js*
 ~~~
 + /joy topic publish
 ~~~shell
