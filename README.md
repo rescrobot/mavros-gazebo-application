@@ -117,6 +117,7 @@ MAVROS 런치 파일 또는 PX4 런치 파일에 파라미터 설정 부분을 �
     + Velocity/Attitude control are not supported anymore due to their error.
 
 + connect joystick with PC via cable
+
 check connection
 
 -> s /dev/input/js*
